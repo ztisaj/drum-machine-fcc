@@ -1,0 +1,85 @@
+body {
+  background-color: #048295;
+
+}
+
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  width: 800px;
+  margin: 50px auto;
+}
+
+#display {
+  height: 50px;
+  width: 250px;
+  border: 2px solid #000;
+  margin: auto;
+  background-color: #ecf2f5;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  vertical-align: baseline;
+  line-height: 50px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.drum-pad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ecf2f5;
+  margin: auto;
+  height: 70px;
+  width: 600px;
+}
+
+.button-pad {
+  margin: auto;
+  background-color: #22303c;
+  border: 1px solid #fdc12a;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  vertical-align: baseline;
+  line-height: 60px;
+}
+
+.button-pad:hover {
+  cursor: pointer;
+  border: 3px solid #fdc12a;
+}
+
+@media(max-width: 850px) {
+  #drum-machine,
+  .drum-pad {
+    height: auto;
+    width: auto;
+  }
+
+  #display {
+    margin: 70px auto 50px auto;
+    width: 80%;
+  }
+
+  .button-pad {
+    height: 7vh;
+    width: 7vw;
+    margin: 15px 5px;
+    font-size: 25px;
+    line-height: 7vh;
+  }
+
+  .button-pad:hover {
+    border: 2px solid #fdc12a;
+  }
+}
